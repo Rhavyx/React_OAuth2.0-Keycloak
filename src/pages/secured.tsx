@@ -8,9 +8,9 @@ const Secured: React.FC = () => {
 
     useEffect(()=> {
         const keycloak = Keycloak({
-          url: "https://pado.hausenn.com.br/auth",
-          realm: "hausenn",
-          clientId: 'hausenn-client-app'
+          url: "http://localhost:8080/auth",
+          realm: "test-realm",
+          clientId: 'test-client-app'
         });
 
         keycloak.init({onLoad: 'login-required'}).then(authenticated => {
