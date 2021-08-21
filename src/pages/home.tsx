@@ -10,6 +10,9 @@ const Home: React.FC = () => {
                 <NavLink to='/about' exact>
                     More about me
                 </NavLink>
+                <NavLink to='/secured' exact>
+                    Secured Dashboard
+                </NavLink>
             </div>
         </div>
         )
